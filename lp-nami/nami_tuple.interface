@@ -1,0 +1,6 @@
+(interface Tuple
+    (func index ( (param p_result *) (param index int) ) )
+    (func slice ( (param p_result "array *") (param lower_bound int) (param upper_bound int) ) )
+    (func empty ( (param p_result "bool *") ) )
+    (func size  ( (param p_result "int *") ) )
+)

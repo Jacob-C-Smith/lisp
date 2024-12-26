@@ -1,0 +1,4 @@
+(interface Mat4
+    (func mul_mat4 ( (param p_result mat4*) (param M Mat4) (param N Mat4) ) )
+    (func mul_vec3 ( (param p_result mat4*) (param M Mat4) (param N Vec3) ) )
+)

@@ -1,0 +1,1 @@
+(document "my window" (on-click "my_button" (x y) ( (write x y) (my_label set_text "Alt text") ) ) )

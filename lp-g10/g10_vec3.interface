@@ -1,0 +1,4 @@
+(interface Vec3
+    (func add_vec3 ( (param p_result mat3*) (param v Vec3) (param w Vec3) ) )
+    (func mul_vec3 ( (param p_result mat3*) (param v Vec3) (param w Vec3) ) )
+)

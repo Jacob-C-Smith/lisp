@@ -1,0 +1,3 @@
+(main ( (param argc int) (param argv array) ) 
+    ( write "Hello, World!")
+)

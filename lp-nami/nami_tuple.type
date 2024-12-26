@@ -1,0 +1,30 @@
+(type tuple (Tuple)
+    (struct
+        (field a array)
+        (field l int)
+    )
+    (func index ( (param p_result *) (param index int) )
+        (store
+            (param p_result)
+            (index-on (field a) (param index))
+        )
+    )
+    (func slice ( (param p_result "array *") (param lower_bound int) (param upper_bound int) )
+        (let ret array [])
+        (for ( (let i (param lower_bound)) (< i (param upper_bound) ) (++ i) ) {
+            (store (index-on (- i (param lower_bound))) (index-on (field a) i))
+        } )
+    )
+    (func empty ( (param p_result "bool *") )
+        (store
+            (param p_result)
+            ("==" ( (field l) 0))
+        )
+    )
+    (func size ( (param p_result "int *") )
+        (store
+            (param p_result)
+            (field l)
+        )
+    )
+)

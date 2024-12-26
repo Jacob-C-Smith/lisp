@@ -1,0 +1,6 @@
+(import tuple)
+(main ( (param argc int) (param argv array) ) 
+    (set my_tuple (tuple ("red", "yellow", "green", "blue") ) )
+    (set my_slice (my_tuple slice 1 2) )
+    (write my_slice)
+)

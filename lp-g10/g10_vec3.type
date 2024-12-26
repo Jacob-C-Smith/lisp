@@ -1,0 +1,21 @@
+(type vec3 (Vec3)
+    (struct
+        (field x number)
+        (field y number)
+        (field z number)
+    )
+    
+    (func add_vec3 ( (param p_result vec3*) (param v Vec3) (param w Vec3) )
+        (store
+            ( (field x) (field y) (field z) )
+            ( + (param v) (param w) )
+        ) 
+    )
+
+    (func mul_vec3 ( (param p_result vec3*) (param v Vec3) (param w Vec3) )
+        (store
+            ( (field x) (field y) (field z) )
+            ( * (param v) (param w) )
+        ) 
+    )
+)

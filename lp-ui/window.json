@@ -1,0 +1,24 @@
+{
+    "name"     : "my window",
+    "width"    : 800,
+    "height"   : 720,
+    "title"    : "Window",
+    "elements" : 
+    {
+        "my label" : 
+        {
+            "type"     : "LABEL",
+            "text"     : "", 
+            "x"        : 16,
+            "y"        : 16,
+            "size"     : 1
+        },
+        "my button" : 
+        {
+            "type"  : "BUTTON",
+            "x"     : 16,
+            "y"     : 32,
+            "label" : "Button"
+        }
+    }
+}
